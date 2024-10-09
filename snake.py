@@ -13,7 +13,7 @@ def snakeGame():
     running = True
     gameOver = False
 
-    gameSpeed = 10
+    gameSpeed = 15
 
     # snake
     snakePositionY, snakePositionX = height / 2, width / 2
