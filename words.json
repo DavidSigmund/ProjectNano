@@ -1,0 +1,38 @@
+{
+  "easy": [
+    "kat",
+    "huis",
+    "boom",
+    "auto",
+    "fiets",
+    "zon",
+    "vis",
+    "boek",
+    "pen",
+    "jas"
+  ],
+  "normal": [
+    "tafel",
+    "lamp",
+    "camera",
+    "regen",
+    "vogel",
+    "boter",
+    "toetsenbord",
+    "bloem",
+    "school",
+    "hond"
+  ],
+  "hard": [
+    "parachute",
+    "mysterieuze",
+    "zevenendertig",
+    "encyclopedie",
+    "ritmisch",
+    "psychologie",
+    "champignon",
+    "quantumfysica",
+    "koelkastmagneet",
+    "microklimaat"
+  ]
+}

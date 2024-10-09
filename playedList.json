@@ -1,0 +1,40 @@
+{
+    "played": [
+        {
+            "user": "da",
+            "tries": 9,
+            "date": "2024-09-09T19:19:06.343870",
+            "result": "lose"
+        },
+        {
+            "user": "david",
+            "tries": 7,
+            "date": "2024-09-10T12:31:10.627942",
+            "result": "win"
+        },
+        {
+            "user": "da",
+            "tries": 9,
+            "date": "2024-09-10T15:20:58.365666",
+            "result": "lose"
+        },
+        {
+            "user": "Anoek",
+            "tries": 5,
+            "date": "2024-09-11T11:20:03.492720",
+            "result": "win"
+        },
+        {
+            "user": "dabi",
+            "tries": 9,
+            "date": "2024-09-12T18:07:57.356142",
+            "result": "lose"
+        },
+        {
+            "user": "david",
+            "tries": 4,
+            "date": "2024-09-19T17:00:54.145602",
+            "result": "win"
+        }
+    ]
+}
