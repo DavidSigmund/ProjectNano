@@ -2,17 +2,17 @@ from raadHetGetal import raadHetGetal
 from galgje import galgje
 from blackJack import blackJack
 from snake import snakeGame
-
+from enterTheDungeon.game_play import startEnterTheDugeon
 
 def startProgram():
     print("Welkom in David's Nano project")
     print("""
-        ______  ___ ______ _____ 
-        |  _  \/ _ \|  _  \  _  |
-        | | | / /_\ \ | | | | | |
-        | | | |  _  | | | | | | |
-        | |/ /| | | | |/ /\ \_/ /
-        |___/ \_| |_/___/  \___/                 
+    ______  ___ ______ _____ 
+    |  _  \/ _ \|  _  \  _  |
+    | | | / /_\ \ | | | | | |
+    | | | |  _  | | | | | | |
+    | |/ /| | | | |/ /\ \_/ /
+    |___/ \_| |_/___/  \___/                 
     """)
     userName = getUser()
 
@@ -29,6 +29,7 @@ def menu(userName):
                    "  2. Galgje\n"
                    "  3. BlackJack\n"
                    "  4. Snake\n"
+                   "  5. Enter the dungeon\n"
                    "\n")
     if (menuKeuzen == "1"):
         raadHetGetal(userName)
@@ -38,6 +39,8 @@ def menu(userName):
         blackJack()
     elif (menuKeuzen == "4"):
         snakeGame()
+    elif (menuKeuzen == "5"):
+        startEnterTheDugeon(userName)
     else:
         print("deze keuzen bestaat niet probeer nog een keer")
         menu(userName)
