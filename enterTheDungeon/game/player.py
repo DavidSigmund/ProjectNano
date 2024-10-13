@@ -19,7 +19,7 @@ class Player:
 
     def fightEnemy(self, enemy):
         # Load items from JSON file
-        itemsFilePath = 'libraries/items.json'
+        itemsFilePath = 'enterTheDungeon/libraries/items.json'
         with open(itemsFilePath, 'r') as file:
             items = json.load(file)
 
@@ -39,8 +39,13 @@ class Player:
             print("\n--- Player Stats ---")
             print(f"Name: {self.name}")
             print(f"Health: {self.health}")
-            self.show_inventory()
+            if self.inventory:
+                print("You are carrying:")
+                for item in self.inventory:
+                    print(f"- {item.name}")
 
+            else:
+                print("Your inventory is empty.")
 
             selectedItem = None
 

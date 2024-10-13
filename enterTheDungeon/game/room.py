@@ -15,15 +15,15 @@ class Room:
 
     def generate_room(x, y):
         # get rooms, items and enemies from json file
-        roomsFilePath = 'libraries/rooms.json'
+        roomsFilePath = 'enterTheDungeon/libraries/rooms.json'
         with open(roomsFilePath, 'r') as file:
             rooms = json.load(file)
 
-        itemsFilePath = 'libraries/items.json'
+        itemsFilePath = 'enterTheDungeon/libraries/items.json'
         with open(itemsFilePath, 'r') as file:
             items = json.load(file)
 
-        enemiesFilePath = 'libraries/enemies.json'
+        enemiesFilePath = 'enterTheDungeon/libraries/enemies.json'
         with open(enemiesFilePath, 'r') as file:
             enemies = json.load(file)
 
@@ -39,14 +39,15 @@ class Room:
         if random.random() < rooms['rooms'][name]['hasItemProbability']:
 
             # randomly choose what kind of item to add
-            item_type = random.choice(['weapon', 'healing', 'armor'])
+            item_type = random.choice(['weapons', 'consumables', 'armor'])
 
             # create item
             itemName = random.choice(list(items[item_type]))
-            itemDetails = items['weapons'][itemName]
-            if item_type == 'weapong':
+            itemDetails = items[item_type][itemName]
+
+            if item_type == 'weapons':
                 item = Item(itemName, itemDetails['description'], itemDetails['damage'])
-            elif item_type == 'healing':
+            elif item_type == 'consumables':
                 item = Item(itemName, itemDetails['description'], itemDetails['healing'])
             elif item_type == 'armor':
                 item = Item(itemName, itemDetails['description'], itemDetails['armor'])
