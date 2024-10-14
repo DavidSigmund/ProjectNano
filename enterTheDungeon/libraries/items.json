@@ -19,6 +19,26 @@
     "Magic Staff": {
       "description": "An enchanted staff, brimming with arcane energy.",
       "damage": 12
+    },
+    "Flaming Sword": {
+      "description": "A sword engulfed in flames, burning everything it touches.",
+      "damage": 20
+    },
+    "Crossbow": {
+      "description": "A mechanical crossbow that shoots powerful bolts.",
+      "damage": 12
+    },
+    "Mace": {
+      "description": "A spiked mace for smashing enemies in close combat.",
+      "damage": 13
+    },
+    "Warhammer": {
+      "description": "A heavy warhammer that can crush armor.",
+      "damage": 18
+    },
+    "Spear": {
+      "description": "A long spear perfect for thrusting attacks from a distance.",
+      "damage": 9
     }
   },
   "armor": {
@@ -29,6 +49,26 @@
     "Helmet": {
       "description": "A bronze helmet offering protection for the head.",
       "armor": 7
+    },
+    "Chestplate": {
+      "description": "A heavy iron chestplate for upper body protection.",
+      "armor": 15
+    },
+    "Greaves": {
+      "description": "Iron greaves that protect the legs.",
+      "armor": 8
+    },
+    "Gauntlets": {
+      "description": "Steel gauntlets that protect the hands and arms.",
+      "armor": 5
+    },
+    "Dragon Scale Armor": {
+      "description": "Armor made from the scales of a dragon, providing exceptional protection.",
+      "armor": 25
+    },
+    "Leather Armor": {
+      "description": "Light armor made from hardened leather, offering mobility and decent protection.",
+      "armor": 8
     }
   },
   "consumables": {
